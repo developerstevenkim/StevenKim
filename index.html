@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Steven Kim</title>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon_StevenKim.png">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6W3G9VRYS1"></script>
+</head>
+
+<body>
+    <!-- Skill, Project, About, Contact-->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#skill" class="w3-bar-item w3-button w3-hide-small" id="skillSection"
+                onclick="skillBar()">SKILLS</a>
+            <a href="#project1" class="w3-bar-item w3-button w3-hide-small">PROJECT</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small">ABOUT</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
+        </div>
+    </div>
+
+
+    <!-- Main page -->
+    <div class="bgimg bgimg_home w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle titleDiv">
+            <span id="title">Steven Kim</span>
+        </div>
+    </div>
+
+    <!-- icons, 
+        
+        
+    skills-->
+
+    <!-- Skills -->
+    <!--
+    <div class="bgimg bgimg_skills bgcontent" id="skill" onclick="skillBar()">
+        <div class="whitespace"></div>
+        <p id="sectionTitle">Skills</p>
+        <div class="grid-container">
+            <div class="grid-item">English
+            </div>
+            <div class="grid-item">
+                <div style="margin: 10px;">
+                    <div id="expBar">
+                        <div id="bar1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">Korean</div>
+            <div class="grid-item">
+                <div style="margin: 10px;">
+                    <div id="expBar">
+                        <div id="bar2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">C</div>
+            <div class="grid-item">
+                <div style="margin: 10px;">
+                    <div id="expBar">
+                        <div id="bar3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">Java</div>
+            <div class="grid-item">
+                <div style="margin: 10px;">
+                    <div id="expBar">
+                        <div id="bar4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">Oracle</div>
+            <div class="grid-item">
+                <div style="margin: 10px;">
+                    <div id="expBar">
+                        <div id="bar5"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">HTML, CSS, JavaScript</div>
+            <div class="grid-item">
+                <div style="margin: 10px;">
+                    <div id="expBar">
+                        <div id="bar6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p style="text-align: right; display:block; margin:auto; width:90%">
+            &#8727; All the scores based on my transcript<br>&#8727; Click the screen if scores are not showing
+        </p>
+    </div>
+    -->
+
+    <!-- Project-->
+    <div class="bgimg bgimg_project bgcontent" id="project1">
+        <div class="column">
+            <p id="sectionTitle">Project 1</p>
+            <ul class="projectList">
+                <i class="fas fa-arrow-left" style="visibility:hidden;"></i>
+                <a href="https://team22-project2.web.app/" target="_blank">
+                    <img src="images/uTrack.png" id="icon_utrack" >
+                </a>
+                <i class="fas fa-arrow-right" id="secondProject"></i>
+            </ul>
+            <p id="projectTitle">uTrack is a mobile-first web application</p>
+            <p id="projectTitle">It can be used to notify and track the
+                availability of essential CoViD-19-related utilities</p>
+            <hr>
+            <img src="images/icon_handsantizer.png" width="100px;" id="icon_sanitizer">
+            <img src="images/icon_mask.png" width="100px;" id="icon_mask">
+            <img src="images/icon_toiletpaper.png" width="100px;" id="icon_toiletpaper">
+            <p id="projectDescription">
+                Features Include:
+
+                Allows users to post and update the supply status of essential items in nearby stores
+                Tracks stores that carry items users want to purchase with the use of map APIs
+                Regulates user-uploaded posts with an admin and reporting system
+                Shows estimated quantity of products with ease of readability in mind
+                Implements a point-rewarding system that increments after every post from the users to gauge their
+                participation and efforts
+            </p>
+        </div>
+    </div>
+
+    <div class="bgimg bgimg_project bgcontent" id="project2">
+        <div class="column">
+            <p id="sectionTitle">Project 2</p>
+            <ul class="projectList">
+                <i class="fas fa-arrow-left" id="firstProject"></i>
+                <a href="https://devpost.com/software/the-mindful-shopper" target="_blank">
+                    <img src="images/mindShopper.png" id="icon_mindshopper" >
+                </a>
+                The Mindful Shopper
+                <i class="fas fa-arrow-right" id="thirdProject"></i>
+            </ul>
+            <p id="projectTitle">This application makes it easy for users to find
+                second hand clothing online, while remaining relevant to today's trends.</p>
+            <hr><p id="projectDescription">
+                What it does?
+
+                Our extension makes it easy for users to find second hand clothing online,
+                while remaining relevant to today's trends. When shopping,
+                a user simply has to open our extension and with one click
+                they will be presented with clothing options from online thrift
+                and resale stores similar to those they are viewing from a fast fashion retailer.
+            </p>
+        </div>
+    </div>
+
+    <div class="bgimg bgimg_project bgcontent" id="project3">
+        <div class="column">
+            <p id="sectionTitle">Project 3</p>
+            <ul class="projectList">
+                <i class="fas fa-arrow-left" id="secondProject2"></i>
+                <a href="https://www.youtube.com/watch?v=JRZ0_e6CpDg&t=28s" target="_blank">
+                    <img src="images/theSound.png" id="icon_theSound" >
+                </a>
+                <i class="fas fa-arrow-right" style="visibility: hidden;"></i>
+            </ul>
+            <p id="projectTitle">Personal Youtube Channel</p>
+            <hr><p id="projectDescription">
+                I love to take pictures and videos on my daily life.
+                Check out my first video!
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JRZ0_e6CpDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </iframe>
+            
+        </div>
+    </div>
+
+    <!-- Interest -->
+    <div class="bgimg bgimg_about bgcontent" id="about">
+        <div class="whitespace"></div>
+        <p id="sectionTitle">Interests</p>
+        <div class="rowInterest">
+            <div class="column">
+                <span id="title">Photography</span>
+                <div class="card">
+                    <img src="./images/Photography.JPG" class="cardImage">
+                    <div class="container">
+                        <p class="cardText">
+                            I love photography.
+                            It gives me rich of idea and great memories.
+                            The time will be forgotten but the photos will remain.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <span id="title">Cook</span>
+                <div class="card">
+                    <img src="./images/SushiMania.JPG" class="cardImage">
+                    <div class="container">
+                        <p class="cardText">
+                            I have been working in the food industry.
+                            I am glad that I can make dishes for our family and our customer at work.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <span id="title">Travel</span>
+                <div class="card">
+                    <img src="./images/Travel_Banff_Downtown.JPG" class="cardImage">
+                    <div class="container">
+                        <p class="cardText">
+                            I like to travel. Who does not?
+                            It explains why I am here in Vancouver all the way from South Korea.
+                            I am still travelling Vancouver.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="bgimg bgimg_white" id="contact">
+        <div class="whitespace"></div>
+        <div class="container">
+            <div style="text-align:center; margin:0px; padding:0px;">
+                <p style="font-size:2rem">Contact</p>
+            </div>
+            <div class="rowContact">
+                <div class="columnContact">
+                    <hr>
+                    <p style="text-align: center; font-size:2rem">Steven Kim</p>
+                    <hr>
+                    <p style="text-align: center;">604 679 4111</p>
+                    <p style="text-align: center;">dkim299@my.bcit.ca</p>
+
+                    <img src="./images/ScienceWorld.jpg" style="width:40%; display: block; margin: auto;">
+                    <hr>
+                    <ul class="icons">
+                        <li><a href="https://www.linkedin.com/in/dohun-kim-a41824181/" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/developerstevenkim/" class="github" target="_blank"><i
+                                    class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="columnContact">
+                    <form class="contactForm">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Your email">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                        <label for="context">Context</label>
+                        <textarea id="context" name="context" placeholder="Write something.."
+                            style="height:100px"></textarea>
+                        <input type="submit" value="Submit" id="submitBtn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+    <script src="script/firebase.js"></script>
+    <script src="script/index.js"></script>
+</body>
+
+</html>

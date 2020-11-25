@@ -1,0 +1,276 @@
+body,
+html {
+    height: 100%;
+    color: black;
+    line-height: 2.5;
+    margin: 0;
+    padding: 0;
+    font-family: 'Piazzolla', serif;
+    font-weight: bold;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    text-align: center;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #0966C2;
+}
+
+.icons .github {
+    color: black;
+}
+
+.icons li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.projectList {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.projectList * {
+    padding: 10px;
+}
+
+.bgimg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.bgimg_white {
+    background-image: url(../images/White.png);
+}
+
+.bgimg_about {
+    background-color: #EFC050;
+}
+
+#title {
+    font-size: 2rem;
+}
+
+.titleDiv {
+    font-size: 2rem;
+    opacity: 50%;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+#expBar {
+    top: 5px;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    margin: auto;
+    display: block;
+}
+
+#bar1,
+#bar2,
+#bar3,
+#bar4,
+#bar5,
+#bar6 {
+    width: 0%;
+    height: 30px;
+    background-color: lightgrey;
+    text-align: center;
+    line-height: 30px;
+    color: black;
+    border-radius: 15px;
+}
+
+.column {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.whitespace {
+    width: 90%;
+    display: block;
+    height: 60px;
+    margin: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: white;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+}
+
+.cardImage {
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.cardText {
+    padding: 10px;
+}
+
+#icon_utrack {
+    display: block;
+    margin: auto;
+    max-height: 100px;
+}
+
+/* Style inputs */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 0px 10px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4c90af;
+    color: white;
+    padding: 6px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #4562a0;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.columnContact {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.rowContact:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+label {
+    margin-bottom: 0px;
+}
+
+#sectionTitle {
+    font-size: 3rem;
+    background-color: white;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+@media screen and (min-width: 701px) {
+    .rowInterest {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+    }
+
+    .rowProject {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        margin: auto;
+    }
+
+    .bgimg_home {
+        background-image: url(../images/Travel_Banff_Railway.jpg);
+    }
+
+    .bgcontent {
+        display: block;
+        margin: 0 50px 0 50px;
+    }
+
+    #projectTitle {
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+
+    #projectDescription {
+        font-size: 14px;
+    }
+
+    #project2,
+    #project3 {
+        display: none;
+        left: -10%;
+    }
+
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+
+    .bgimg_home {
+        background-image: url(../images/Travel_Banff_Railway_Mobile.png);
+    }
+
+    .columnContact,
+    input[type=submit],
+    .column {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    #icon_mask,
+    #icon_sanitizer,
+    #icon_toiletpaper {
+        display: none;
+    }
+
+    #projectTitle {
+        font-size: 20px;
+    }
+
+    #projectDescription {
+        display: none;
+    }
+
+    #project1,
+    #project2,
+    #project3 {
+        display: block;
+        left: 0px;
+    }
+
+    .fa-arrow-right,
+    .fa-arrow-left {
+        display: none;
+    }
+}
